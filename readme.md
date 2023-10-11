@@ -27,7 +27,7 @@ For Wayland
 pacman -S wl-clipboard 
 ```
 
-### C and C++ Compiler issues on Windows
+#### C and C++ Compiler issues on Windows
 Install gcc with Scoop
 ```shell
 scoop install gcc
