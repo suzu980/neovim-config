@@ -2,6 +2,11 @@
 This is my personal Neovim configuration and keybinds for personal use.
 If you are new to Neovim, it is heavily encouraged to not copy my configuration files as these configurations are tailored to my personal workflow.
 
+### Requirements and notes
+Remember to install xclip on x11 with Pacman
+```
+pacman -S xclip
+```
 ### Preview Screens
 
 | ![Preview Image 1](images/preview1.png) | 
