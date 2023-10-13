@@ -7,9 +7,7 @@ return {
 	},
 	config = function()
 		local nvimtree = require("nvim-tree")
-		nvimtree.setup({
-			vim.keymap.set("n", "<c-n>", ":NvimTreeFindFileToggle<CR>"),
-		})
+		nvimtree.setup({})
 		local swap_then_open_tab = function()
 			local api = require("nvim-tree.api")
 			local node = api.tree.get_node_under_cursor()

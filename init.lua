@@ -45,10 +45,7 @@ vim.opt.shiftwidth = 2
 vim.opt.autoindent = true
 vim.opt.mouse = "a"
 vim.opt.fillchars = { eob = " " }
--- Keymaps
-local keymap = vim.keymap
-keymap.set("n", "x", '"_x') -- no yank with X
-keymap.set("n", "<C-a>", "gg<S-v>G") -- select all
 require("core.statusline")
 require("core.lazy")
 require("core.lsp_config")
+require("core.keybinds")
