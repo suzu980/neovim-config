@@ -42,6 +42,6 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<c-a>", ":Format<CR>")
+		vim.keymap.set("n", "<leader>fo", ":Format<CR>")
 	end,
 }
