@@ -13,7 +13,6 @@ return {
 					additional_args = function(opts)
 						return{
 							"--hidden",
-							"--unrestricted",
 							"--line-number",
 							"--smart-case"
 					}
