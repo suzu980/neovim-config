@@ -22,7 +22,7 @@ local set_hl_for_floating_window = function()
 	})
 end
 
-set_hl_for_floating_window()
+--set_hl_for_floating_window()
 
 vim.api.nvim_create_autocmd("ColorScheme", {
 	pattern = "*",
@@ -37,7 +37,7 @@ vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autoread = true
 vim.opt.number = true
-vim.opt.laststatus = 2
+vim.opt.laststatus = 3
 -- tabs and indents
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -45,7 +45,9 @@ vim.opt.shiftwidth = 2
 vim.opt.autoindent = true
 vim.opt.mouse = "a"
 vim.opt.fillchars = { eob = " " }
-require("core.statusline")
 require("core.lazy")
+require("core.color-scheme")
+require("core.statusline")
+require("core.alpha-config")
 require("core.lsp_config")
 require("core.keybinds")
