@@ -26,16 +26,6 @@ return {
 			}, {
 				{ name = "buffer" },
 			}),
-			window = {
-				completion = {
-					border = "rounded",
-					winhighlight = "Normal:CmpNormal",
-				},
-				documentation = {
-					border = "rounded",
-					winhighlight = "Normal:CmpNormal",
-				},
-			},
 		})
 	end,
 }

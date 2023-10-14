@@ -2,14 +2,6 @@ require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = { "lua_ls", "tsserver", "rust_analyzer", "html", "tailwindcss", "pyright", "marksman", "svelte" },
 })
-vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(
-	vim.lsp.handlers.hover,
-	{border = 'rounded', title="Hover"}
-)
-vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
-	vim.lsp.handlers.signature_help,
-	{border = 'rounded', title="Hover"}
-)
 local on_attach = function(_, _)
 	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
 	vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
