@@ -5,8 +5,7 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
-	[[  Hello Suzu980  ]],
-	[[Welcome to Neovim]],
+	[[Hello Suzu. Welcome to Neovim]],
 }
 
 dashboard.section.buttons.val = {
