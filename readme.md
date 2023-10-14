@@ -1,12 +1,8 @@
+![Preview Image 1](images/preview1.png)
 ## Personal Neovim Configuration
 This is my personal Neovim configuration and keybinds for personal use.
 If you are new to Neovim, it is heavily encouraged to not copy my configuration files as these configurations are tailored to my personal workflow.
 
-### Preview Screens
-
-| ![Preview Image 1](images/preview1.png) | 
-|:--:| 
-| *Preview 1* |
 
 ### Issues and Fixes
 #### Clipboard is not working on linux
