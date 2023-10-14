@@ -1,10 +1,6 @@
--- Get the colors for the current theme
-local colors = require("kanagawa.colors").setup()
-local palette_colors = colors.palette
-local theme_colors = colors.theme
 -- Get the colors for a specific theme
-local dragon_colors = require("kanagawa.colors").setup({ theme = "dragon" })
-local dragon_theme_colors = dragon_colors.theme
+local colors = require("kanagawa.colors").setup({})
+local dragon_theme_colors = colors.theme
 -- Set Colors for modes
 vim.api.nvim_set_hl(
 	0,

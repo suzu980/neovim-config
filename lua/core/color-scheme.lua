@@ -17,7 +17,7 @@ require("kanagawa").setup({
 		}
 	end,
 })
-vim.cmd("colorscheme kanagawa-dragon")
+vim.cmd("colorscheme kanagawa-lotus")
 local colors = require("kanagawa.colors").setup({ })
 local theme = colors.theme
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = theme.ui.bg_p1 })
