@@ -8,14 +8,6 @@ If you are new to Neovim, it is heavily encouraged to not copy my configuration 
 |:--:| 
 | *Preview 1* |
 
-| ![Preview Image 2](images/preview2.png) | 
-|:--:| 
-| *Preview 2* |
-
-| ![Preview Image 3](images/preview3.png) | 
-|:--:| 
-| *Preview 3* |
-
 ### Issues and Fixes
 #### Clipboard is not working on linux
 Remember to install xclip on x11 with Pacman
