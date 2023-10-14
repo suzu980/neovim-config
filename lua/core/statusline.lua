@@ -123,6 +123,9 @@ local function filename()
 	if fname == "" then
 		return ""
 	end
+	if fname == "NvimTree_1" then
+		return ""
+	end
 	return fname .. " "
 end
 local function lsp()
@@ -193,7 +196,7 @@ local vcs = function()
 		changed,
 		removed,
 		" ",
-		"%#GitSignsAdd# ",
+		"%#GitSignsAdd#  ",
 		git_info.head,
 		" %#Normal#",
 	})
