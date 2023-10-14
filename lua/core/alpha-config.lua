@@ -32,7 +32,7 @@ dashboard.section.buttons.val = {
 }
 
 local function footer()
-	return "     	  ~ Always learning ~\nVersion 1.1 of Neovim Configuration"
+	return "     	  ~ Always learning ~\nVersion 1.1 of Neovim Configuration\nAuthor : https://github.com/suzu980"
 end
 
 dashboard.section.footer.val = footer()
