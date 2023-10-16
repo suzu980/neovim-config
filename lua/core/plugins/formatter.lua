@@ -39,6 +39,9 @@ return {
 				python = {
 					require("formatter.filetypes.python").black,
 				},
+				c = {
+					require("formatter.filetypes.c").clangformat,
+				},
 			},
 		})
 

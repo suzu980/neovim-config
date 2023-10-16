@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "tsserver", "rust_analyzer", "html", "tailwindcss", "pyright", "marksman", "svelte" },
+	ensure_installed = { "lua_ls", "tsserver", "rust_analyzer", "html", "tailwindcss", "pyright", "marksman", "svelte","clangd" },
 })
 local on_attach = function(_, _)
 	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
@@ -40,6 +40,10 @@ require("lspconfig").marksman.setup({
 	capabilities = capabilities,
 })
 require("lspconfig").svelte.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+require("lspconfig").clangd.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
