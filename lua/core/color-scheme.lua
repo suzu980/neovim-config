@@ -17,7 +17,14 @@ require("kanagawa").setup({
 		}
 	end,
 })
-vim.cmd("colorscheme kanagawa-dragon")
-local colors = require("kanagawa.colors").setup({ })
+local lightdark = require("core.light-dark-config")
+	vim.cmd("colorscheme kanagawa")
+--if lightdark == "light" then
+--	vim.cmd("colorscheme kanagawa-lotus")
+--elseif lightdark == "dark" then
+--	vim.cmd("colorscheme kanagawa-dragon")
+--end
+
+local colors = require("kanagawa.colors").setup({})
 local theme = colors.theme
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = theme.ui.bg_p1 })
