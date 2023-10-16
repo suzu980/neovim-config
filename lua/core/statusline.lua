@@ -1,63 +1,63 @@
 -- Get the colors for a specific theme
-local colors = require("kanagawa.colors").setup({})
-local dragon_theme_colors = colors.theme
--- Set Colors for modes
-vim.api.nvim_set_hl(
-	0,
-	"StatusLineAccent",
-	{ fg = dragon_theme_colors.ui.fg, bg = dragon_theme_colors.ui.bg_p1, bold = true }
-)
-vim.api.nvim_set_hl(
-	0,
-	"StatusLineInsertAccent",
-	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
-)
-vim.api.nvim_set_hl(
-	0,
-	"StatusLineVisualAccent",
-	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
-)
-vim.api.nvim_set_hl(
-	0,
-	"StatusLineReplaceAccent",
-	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
-)
-vim.api.nvim_set_hl(
-	0,
-	"StatusLineCmdLineAccent",
-	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
-)
-vim.api.nvim_set_hl(
-	0,
-	"StatusLineTerminalAccent",
-	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
-)
-vim.api.nvim_set_hl(
-	0,
-	"StatusLineExtra",
-	{ fg = dragon_theme_colors.ui.fg, bg = dragon_theme_colors.ui.bg_m2, bold = true }
-)
--- LSP Diagnostics
-vim.api.nvim_set_hl(
-	0,
-	"LspDiagnosticsSignError",
-	{ fg = dragon_theme_colors.diag.error, bg = dragon_theme_colors.ui.bg, bold = true }
-)
-vim.api.nvim_set_hl(
-	0,
-	"LspDiagnosticsSignWarning",
-	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg, bold = true }
-)
-vim.api.nvim_set_hl(
-	0,
-	"LspDiagnosticsSignInformation",
-	{ fg = dragon_theme_colors.diag.info, bg = dragon_theme_colors.ui.bg, bold = true }
-)
-vim.api.nvim_set_hl(
-	0,
-	"LspDiagnosticsSignHint",
-	{ fg = dragon_theme_colors.diag.hint, bg = dragon_theme_colors.ui.bg, bold = true }
-)
+--local colors = require("kanagawa.colors").setup({})
+--local dragon_theme_colors = colors.theme
+---- Set Colors for modes
+--vim.api.nvim_set_hl(
+--	0,
+--	"StatusLineAccent",
+--	{ fg = dragon_theme_colors.ui.fg, bg = dragon_theme_colors.ui.bg_p1, bold = true }
+--)
+--vim.api.nvim_set_hl(
+--	0,
+--	"StatusLineInsertAccent",
+--	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
+--)
+--vim.api.nvim_set_hl(
+--	0,
+--	"StatusLineVisualAccent",
+--	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
+--)
+--vim.api.nvim_set_hl(
+--	0,
+--	"StatusLineReplaceAccent",
+--	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
+--)
+--vim.api.nvim_set_hl(
+--	0,
+--	"StatusLineCmdLineAccent",
+--	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
+--)
+--vim.api.nvim_set_hl(
+--	0,
+--	"StatusLineTerminalAccent",
+--	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg_p1, bold = true }
+--)
+--vim.api.nvim_set_hl(
+--	0,
+--	"StatusLineExtra",
+--	{ fg = dragon_theme_colors.ui.fg, bg = dragon_theme_colors.ui.bg_m2, bold = true }
+--)
+---- LSP Diagnostics
+--vim.api.nvim_set_hl(
+--	0,
+--	"LspDiagnosticsSignError",
+--	{ fg = dragon_theme_colors.diag.error, bg = dragon_theme_colors.ui.bg, bold = true }
+--)
+--vim.api.nvim_set_hl(
+--	0,
+--	"LspDiagnosticsSignWarning",
+--	{ fg = dragon_theme_colors.diag.warning, bg = dragon_theme_colors.ui.bg, bold = true }
+--)
+--vim.api.nvim_set_hl(
+--	0,
+--	"LspDiagnosticsSignInformation",
+--	{ fg = dragon_theme_colors.diag.info, bg = dragon_theme_colors.ui.bg, bold = true }
+--)
+--vim.api.nvim_set_hl(
+--	0,
+--	"LspDiagnosticsSignHint",
+--	{ fg = dragon_theme_colors.diag.hint, bg = dragon_theme_colors.ui.bg, bold = true }
+--)
 
 local modes = {
 	["n"] = "NORMAL",
