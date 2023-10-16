@@ -1,30 +1,16 @@
-require("kanagawa").setup({
-	overrides = function(colors)
-		local theme = colors.theme
+require("catppuccin").setup({
+	integrations = {
+		cmp = true,
+		gitsigns = true,
+		nvimtree = true,
+		treesitter = true,
+		alpha = true,
+		mason = true,
+	},
+	custom_highlights = function(colors)
 		return {
-			TelescopeTitle = { fg = theme.ui.special, bold = true },
-			TelescopePromptNormal = { bg = theme.ui.bg_p1 },
-			TelescopePromptBorder = { fg = theme.ui.bg_p1, bg = theme.ui.bg_p1 },
-			TelescopeResultsNormal = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m1 },
-			TelescopeResultsBorder = { fg = theme.ui.bg_m1, bg = theme.ui.bg_m1 },
-			TelescopePreviewNormal = { bg = theme.ui.bg_dim },
-			TelescopePreviewBorder = { bg = theme.ui.bg_dim, fg = theme.ui.bg_dim },
-
-			Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 }, -- add `blend = vim.o.pumblend` to enable transparency
-			PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
-			PmenuSbar = { bg = theme.ui.bg_m1 },
-			PmenuThumb = { bg = theme.ui.bg_p2 },
+			Pmenu = { bg = colors.none },
 		}
 	end,
 })
-local lightdark = require("core.light-dark-config")
-	vim.cmd("colorscheme kanagawa")
---if lightdark == "light" then
---	vim.cmd("colorscheme kanagawa-lotus")
---elseif lightdark == "dark" then
---	vim.cmd("colorscheme kanagawa-dragon")
---end
-
-local colors = require("kanagawa.colors").setup({})
-local theme = colors.theme
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = theme.ui.bg_p1 })
+vim.cmd("colorscheme catppuccin-latte")

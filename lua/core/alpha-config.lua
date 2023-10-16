@@ -46,12 +46,7 @@ local dark_mode_header = {
 	[[⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⡅⠀⣸⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⢉⣵⣿⣿⣿⣿⣿⣿⣿⣿⣇⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸]],
 	[[⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⢹⣿⣿⣿⣟⣛⣛⣛⣛⠋⠙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
 }
-local lightdark = require("core.light-dark-config")
-if lightdark == "light" then
-	dashboard.section.header.val = light_mode_header
-else
-	dashboard.section.header.val = dark_mode_header
-end
+dashboard.section.header.val = light_mode_header
 
 dashboard.section.buttons.val = {
 	dashboard.button("e", "🗎   New file", ":ene <BAR> startinsert <CR>"),
@@ -68,11 +63,7 @@ end
 dashboard.section.footer.val = footer()
 
 dashboard.section.footer.opts.hl = "Include"
-if lightdark == "light" then
-	dashboard.section.header.opts.hl = "Keyword"
-else
-	dashboard.section.header.opts.hl = "Identifier"
-end
+dashboard.section.header.opts.hl = "Include"
 dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
