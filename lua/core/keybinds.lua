@@ -6,6 +6,9 @@ keymap.set("n", "<C-a>", "gg<S-v>G") -- select all
 keymap.set("n", "sv", ":vsplit<Return><C-w>w", { silent = true }) -- V Split
 keymap.set("n", "ss", ":split<Return><C-w>w", { silent = true }) -- Split
 
+-- Goyo
+keymap.set("n", "<leader>wr", ":Goyo<CR>")
+
 -- Telescope
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { silent = true })
