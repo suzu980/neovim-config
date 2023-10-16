@@ -20,6 +20,3 @@ Install gcc with Scoop
 ```shell
 scoop install gcc
 ```
-
-### Credits
-Wallpaper source: [Violet Evergarden by Matsumayu](https://www.deviantart.com/matsumayu/art/Violet-from-Violet-Evergarden-737518940)
