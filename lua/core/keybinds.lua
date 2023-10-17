@@ -7,7 +7,7 @@ keymap.set("n", "sv", ":vsplit<Return><C-w>w", { silent = true }) -- V Split
 keymap.set("n", "ss", ":split<Return><C-w>w", { silent = true }) -- Split
 
 -- Goyo
-keymap.set("n", "<leader>wr", ":Goyo<CR>")
+keymap.set("n", "<leader>go", ":Goyo<CR>")
 -- Markdown Enable Conceal
 keymap.set("n", "<leader>ce", ":set cole=3<CR>")
 -- Markdown Disable Conceal

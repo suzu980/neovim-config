@@ -1,7 +1,8 @@
 return {
 	"preservim/vim-markdown",
 	dependencies = { "godlygeek/tabular" },
-	config = function()
-		vim.opt.foldenable = false
+	init = function()
+		vim.g.vim_markdown_folding_disabled = 1
+		--vim.opt.foldenable = false
 	end,
 }
