@@ -8,6 +8,12 @@ keymap.set("n", "ss", ":split<Return><C-w>w", { silent = true }) -- Split
 
 -- Goyo
 keymap.set("n", "<leader>wr", ":Goyo<CR>")
+-- Markdown Enable Conceal
+keymap.set("n", "<leader>ce", ":set cole=3<CR>")
+-- Markdown Disable Conceal
+keymap.set("n", "<leader>cd", ":set cole=0<CR>")
+-- Toggle Limelight
+keymap.set("n", "<leader>ll", ":Limelight!! 0.8<CR>")
 
 -- Telescope
 local builtin = require("telescope.builtin")
