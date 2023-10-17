@@ -53,6 +53,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("r", "🗁   Recent files", ":Telescope oldfiles <CR>"),
 	dashboard.button("f", "🔍  Find file", ":Telescope find_files <CR>"),
 	dashboard.button("t", "🗛   Find text", ":Telescope live_grep <CR>"),
+	dashboard.button("w", "🗎   Open wiki", ":e ~/wiki/Home/index.md<CR>"),
 	dashboard.button("q", "⍇   Quit", ":qa<CR>"),
 }
 
