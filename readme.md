@@ -6,9 +6,28 @@ Color Scheme is based off Catppuccin. [Original Github Repository is here](https
 
 It is *strongly recommended* that you learn to make your own Neovim configuration instead of copying mine, as all keybinds and configurations are programmed to suit my own workflow.  
 
-### Switching Light and Dark Theme
+### Keybinds 
+#### File Navigation
+`Ctrl+n` - Toggle **Nvim-Tree**  
+#### Dark Mode Switch
 `<leader>mn` - To set theme to **Night Mode**  
 `<leader>ml` - To set theme to **Light Mode**  
+#### Writing
+`<leader>go` - Launch Goyo  
+`<leader>ce` - Enable **Conceal**  
+`<leader>cd` - Disable **Conceal**  
+`<leader>ll` - Toggle **Limelight**  
+#### File Searching
+`<leader>ff` - **Telescope** find files  
+`<leader>fg` - **Telescope** live grep  
+`<leader>fb` - **Telescope** show buffers  
+`<leader>fh` - **Telescope** show help tags  
+#### Switching Buffers
+`tb` - **Buffer** previous  
+`tt` - **Buffer** next  
+`tq` - **Buffer** close  
+#### Open Viki
+`<leader>ww` - Open Vimwiki  
 
 ### Issues and Fixes
 #### Clipboard is not working on linux
