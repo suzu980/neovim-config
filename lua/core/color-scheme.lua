@@ -13,4 +13,9 @@ require("catppuccin").setup({
 		}
 	end,
 })
-vim.cmd("colorscheme catppuccin-mocha")
+local isDark = require("core.light-dark-config")
+if isDark then
+	vim.cmd("colorscheme catppuccin-mocha")
+else
+	vim.cmd("colorscheme catppuccin-latte")
+end
