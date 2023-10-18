@@ -13,7 +13,7 @@ It is *strongly recommended* that you learn to make your own Neovim configuratio
 `<leader>mn` - To set theme to **Night Mode**  
 `<leader>ml` - To set theme to **Light Mode**  
 #### Writing
-`<leader>go` - Launch Goyo  
+`<leader>go` - Launch **Goyo**  
 `<leader>ce` - Enable **Conceal**  
 `<leader>cd` - Disable **Conceal**  
 `<leader>ll` - Toggle **Limelight**  
