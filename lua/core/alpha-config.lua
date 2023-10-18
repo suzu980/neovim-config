@@ -46,7 +46,12 @@ local dark_mode_header = {
 	[[⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⡅⠀⣸⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⢉⣵⣿⣿⣿⣿⣿⣿⣿⣿⣇⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸]],
 	[[⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⢹⣿⣿⣿⣟⣛⣛⣛⣛⠋⠙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
 }
-dashboard.section.header.val = dark_mode_header
+local isDark = require("core.light-dark-config")
+if isDark then
+	dashboard.section.header.val = dark_mode_header
+else
+	dashboard.section.header.val = light_mode_header
+end
 
 dashboard.section.buttons.val = {
 	dashboard.button("e", "🗎   New file", ":ene <BAR> startinsert <CR>"),

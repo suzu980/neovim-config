@@ -1,2 +1,1 @@
-return "light" -- 'light' or 'dark'
-
+return true -- Is it dark mode?

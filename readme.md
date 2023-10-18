@@ -6,6 +6,9 @@ Color Scheme is based off Catppuccin. [Original Github Repository is here](https
 
 It is *strongly recommended* that you learn to make your own Neovim configuration instead of copying mine, as all keybinds and configurations are programmed to suit my own workflow.  
 
+### Switching Light and Dark Theme
+`<leader>mn` - To set theme to **Night Mode**  
+`<leader>ml` - To set theme to **Light Mode**  
 
 ### Issues and Fixes
 #### Clipboard is not working on linux
