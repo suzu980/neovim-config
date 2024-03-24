@@ -26,8 +26,6 @@ It is *strongly recommended* that you learn to make your own Neovim configuratio
 `tb` - **Buffer** previous  
 `tt` - **Buffer** next  
 `tq` - **Buffer** close  
-#### Open Viki
-`<leader>ww` - Open Vimwiki  
 
 ### Issues and Fixes
 #### Clipboard is not working on linux
@@ -44,4 +42,9 @@ pacman -S wl-clipboard
 Install gcc with Scoop  
 ```shell
 scoop install gcc
+```
+#### grep not working
+Install fd 
+```shell
+pacman -S fd
 ```
