@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "tsserver", "rust_analyzer", "html", "tailwindcss", "pyright", "marksman", "svelte","clangd" },
+	ensure_installed = { "lua_ls", "tsserver", "html", "tailwindcss", "clangd" },
 })
 local on_attach = function(_, _)
 	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
@@ -19,27 +19,11 @@ require("lspconfig").tsserver.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
-require("lspconfig").rust_analyzer.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
 require("lspconfig").html.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
 require("lspconfig").tailwindcss.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
-require("lspconfig").pyright.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
-require("lspconfig").marksman.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
-require("lspconfig").svelte.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })

@@ -15,9 +15,6 @@ return {
 				typescriptreact = {
 					require("formatter.filetypes.typescriptreact").prettier,
 				},
-				svelte = {
-					require("formatter.filetypes.svelte").prettier,
-				},
 				html = {
 					require("formatter.filetypes.html").prettier,
 				},
@@ -32,9 +29,6 @@ return {
 				},
 				json = {
 					require("formatter.filetypes.json").prettier,
-				},
-				rust = {
-					require("formatter.filetypes.rust").rustfmt,
 				},
 				python = {
 					require("formatter.filetypes.python").black,
