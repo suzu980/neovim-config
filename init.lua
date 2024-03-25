@@ -5,6 +5,9 @@ local set_hl_for_floating_window = function()
 	vim.api.nvim_set_hl(0, "FloatBorder", {
 		bg = "none",
 	})
+	vim.api.nvim_set_hl(0, "Pmenu", {
+		bg = "none",
+	})
 	vim.api.nvim_set_hl(0, "SignColumn", {
 		bg = "none",
 	})
@@ -22,7 +25,7 @@ local set_hl_for_floating_window = function()
 	})
 end
 
---set_hl_for_floating_window()
+set_hl_for_floating_window()
 
 vim.api.nvim_create_autocmd("ColorScheme", {
 	pattern = "*",

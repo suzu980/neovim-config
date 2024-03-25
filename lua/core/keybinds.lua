@@ -87,5 +87,5 @@ local setLightDashboard = function()
 	vim.cmd("AlphaRedraw")
 	vim.cmd("colorscheme catppuccin-latte")
 end
-vim.keymap.set("n", "<leader>mn", setDarkDashboard, {})
-vim.keymap.set("n", "<leader>ml", setLightDashboard, {})
+--vim.keymap.set("n", "<leader>mn", setDarkDashboard, {})
+--vim.keymap.set("n", "<leader>ml", setLightDashboard, {})
