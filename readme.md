@@ -9,7 +9,7 @@ It is *strongly recommended* that you learn to make your own Neovim configuratio
 ### Keybinds 
 #### File Navigation
 `Ctrl+n` - Toggle **Nvim-Tree**  
-#### Dark Mode Switch
+#### Dark Mode Switch (only available in Neovide)
 `<leader>mn` - To set theme to **Night Mode**  
 `<leader>ml` - To set theme to **Light Mode**  
 #### Writing

@@ -27,6 +27,11 @@ end
 
 set_hl_for_floating_window()
 
+if vim.g.neovide then
+	vim.o.guifont = "JetBrainsMono Nerd Font:h10"
+	vim.g.neovide_cursor_vfx_mode = ""
+
+end
 vim.api.nvim_create_autocmd("ColorScheme", {
 	pattern = "*",
 	desc = "Avoid overwritten by loading color schemes later",
